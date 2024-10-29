@@ -7,4 +7,4 @@ while k < indice:
     k += 1 
     soma = soma + k
 
-print(soma) #mostrando o valor da variável soma
+print(f"A variável soma terá o valor de {soma}") #mostrando o valor da variável soma
