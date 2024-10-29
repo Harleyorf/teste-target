@@ -15,17 +15,17 @@ faturamentos = df[df["valor"] > 0]["valor"]
 menor_faturamento = faturamentos.min()
 maior_faturamento = faturamentos.max()
 
-#calcula a media mensal de faturamento, tirando os dias sem faturamento
+#calcula a media mensal de faturamento tirando os dias sem faturamento
 media_mensal = faturamentos.mean()
 
-#conta o numero de dias em que o faturamento foi superior à media mensal
+#conta o numero de dias em que o faturamento foi superior a media mensal
 dias_acima_media = (faturamentos > media_mensal).sum()
 
-# Exibe os dados em uma tabela
-print("Tabela de Faturamento Diário:")
+#exibe os dados em uma tabela
+print("Tabela de faturamento diário:")
 print(df)
 
-# Exibe os resultados finais
+#exibe os resultados finais
 print(f"\nMenor valor de faturamento em um dia do mês: {menor_faturamento:.2f}")
 print(f"Maior valor de faturamento em um dia do mês: {maior_faturamento:.2f}")
 print(f"Número de dias com faturamento acima da média mensal: {dias_acima_media}")
