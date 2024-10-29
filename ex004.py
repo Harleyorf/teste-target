@@ -12,6 +12,7 @@ faturamento_total = sum(faturamento.values())
 
 #calcula e mostra o percentual de representacao de cada estado dentro do valor total mensal da distribuidora
 print("Percentual de representação de cada estado no faturamento total:")
-for estado, valor in faturamento.items(): #iteração com laço for
+for estado, valor in faturamento.items(): #iteracao com laco for
     percentual = (valor / faturamento_total) * 100
     print(f"{estado}: {percentual:.2f}%")
+print(f"\nO faturamento total foi de R${faturamento_total:.2f}")
